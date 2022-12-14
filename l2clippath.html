@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clip Path</title>
+	<style type="text/css">
+		
+		.shape{
+			width: 500px;
+		}
+
+		#circle{
+			clip-path: circle();
+		}
+
+		#ellipse{
+			clip-path: ellipse(50% 70%);
+		}
+
+		#polygon{
+			clip-path: polygon(23% 0, 53% 73%, 77% 0, 99% 0%, 67% 100%, 38% 99%, 1% 1%);
+		}
+
+	</style>
+</head>
+<body>
+
+	<img src="./img/dog.jpg" id="circle" class="shape" alt="circle" />
+
+	<hr/>
+
+	<img src="./img/dog.jpg" id="ellipse" class="shape" alt="ellipse" />
+
+	<hr/>
+
+	<img src="./img/dog.jpg" id="polygon" class="shape" alt="polygon" />	
+
+</body>
+</html>

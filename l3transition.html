@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transition</title>
+	<style type="text/css">
+		.div1{
+			width: 300px;
+			height: 100px;
+			background-color: steelblue;
+			color: #fff;
+			font-size: 20px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			/*short hand*/
+			/*transition: background-color 1s;*/
+
+			transition-property: background-color;
+			/*transition-duration: 1s;*/
+			/*transition-duration: 0.5s;*/
+			/*transition-duration: .5s;*/
+
+			transition-duration: 1000ms;
+		}
+
+		.div1:hover{
+			background-color: green;
+		}
+
+		.div2{
+			width: 300px;
+			height: 100px;
+			background-color: steelblue;
+			color: #fff;
+			font-size: 20px;
+
+			text-align: center;
+			line-height: 100px; 
+
+			/*transition: all 1s;*/
+
+			/*transition-property: all;*/
+			/*transition-property: width;*/
+			/*transition-property: width,background-color;*/
+			/*transition-property: width,background-color,color,border-radius;
+			transition: 2s;*/
+
+			/*transition: width 1s;*/
+			/*transition: width 1s,background-color :2s;*/
+			/*transition: width 1s,background-color 2s,border-radius 3s;*/
+
+			transition-property: all;
+			transition-duration: 2s;
+			transition-delay: 3s;
+
+			/*transition: all 1s 5s;*/
+		}
+
+		.div2:hover{
+			width: 600px;
+			background-color: green;
+			color: #000;
+			border-radius: 20px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="div1">CSS Transition</div>
+
+	<hr/>
+
+	<div class="div2">CSS Transition</div>
+
+</body>
+</html>
+
+<!-- transition
+transition-property
+transition-duration
+transitiion-delay
+transition-timing-function -->
+
+<!-- 1s=1000ms
+0.5s=500ms -->

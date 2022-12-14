@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Hover Effect</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		body{
+			font-family: sans-serif;
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn{
+			background: none;
+			color: #fff;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			padding: 25px 80px;
+			margin: 20px;
+			border: none;
+
+			cursor: pointer;
+
+			position: relative;
+		}
+
+		.btn::before{
+			content: '';
+			font-family: "Font Awesome 5 Free";
+
+			width: 60px;
+			height: 100%;
+			background-color: deepskyblue;
+			font-size: 150%;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			line-height: 3;
+		}
+
+		.download-btn{
+			background-color: steelblue;
+		}
+
+		.download-btn:hover{
+			background-color: deepskyblue;
+		}
+
+		.download-btn:active{
+			background-color: royalblue;
+		}
+
+		.download-btn::before{
+			content: '\f103';
+			background-color: skyblue;
+		}
+
+		.upload-btn{
+			background-color: violet;
+		}
+
+		.upload-btn:hover{
+			background-color: slateblue;
+		}
+
+		.upload-btn:active{
+			background-color: mediumblue;
+		}
+
+		.upload-btn::before{
+			content: '\f102';
+			background-color: darkviolet;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<button type="button" class="btn download-btn">Download Now</button>
+	<button type="button" class="btn upload-btn">Upload Now</button>
+
+</body>
+</html>
